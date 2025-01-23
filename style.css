@@ -1,0 +1,142 @@
+@font-face{
+    font-family: 'Red Hat Display';
+    src: url(https://fonts.google.com/specimen/Red+Hat+Display);
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* COLORS */
+
+    /* Primary colors */
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+
+    /* Neutral Colors */
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('../images/pattern-background-desktop.svg');
+}
+
+.container{
+    border-radius: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    box-shadow: 1px 0px 10px 1px rgb(39, 37, 37);
+    width: 450px;
+    margin: 15px;
+    overflow: hidden;
+}
+img{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+h3{
+    margin: 20px;
+}
+
+.paragraph_1{
+    color: rgb(95, 93, 93);
+    margin: 10px;
+    padding: 20px;
+}
+
+    
+.subscription{
+    background-color: var(--Very-pale-blue);
+    margin: 10px 30px 10px 30px;
+    padding: 10px; 
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.music{
+    display: flex;
+    margin-bottom: 10px; 
+}
+
+.subscription div{
+    margin: 11px;
+}
+
+.black-text{
+    font-weight: bold;
+    text-align: centers;
+}
+
+a{
+    margin: 30px;
+}
+
+a:hover{
+    color: var(--Desaturated-blue);
+}
+.paragraph_2{
+    color: rgb(95, 93, 93);
+}
+
+button{
+    margin: 10px;
+    padding: 10px;
+    color: var(--White);
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 80%;
+}
+
+.proceed-button{
+    background: var(--Bright-blue);
+    box-shadow: 0px 8px 0px 5px hsl(225, 100%, 94%);
+}
+
+.proceed-button:hover{
+    background-color: var(--Desaturated-blue);
+}
+
+.cancel-button{
+    color: rgb(95, 93, 93);
+    background-color: whitesmoke;
+    font-weight: bolder; 
+}
+
+.cancel-button:hover{
+    color: black;
+    background-color: white;
+}
+
+
+@media only screen and (max-width: 480px){
+    body{
+        background-image: url(images/pattern-background-mobile.svg);
+        font-size: 10px;
+    }
+    .container{
+        width: 90%;
+    }
+
+    h3{
+        font-size: 20px;
+
+    }
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
